@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(*)",
+      "Write(*)",
+      "NotebookEdit(*)",
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(cat *)",
+      "Bash(echo *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Bash(which *)",
+      "Bash(pwd)",
+      "Bash(env)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebSearch",
+      "mcp__*"
+    ],
+    "deny": [],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(npm *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(docker *)",
+      "Bash(kill *)",
+      "Bash(chmod *)",
+      "Bash(chown *)"
+    ]
+  },
+  "plansDirectory": "./reports",
+  "outputStyle": "Explanatory",
+  "respectGitignore": true,
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80"
+  },
+  "enableAllProjectMcpServers": true
+}
